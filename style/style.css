@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap'); 
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: #142251;
+    background-color: #D4EAFF;
+    margin: 0;
+    padding-bottom: 77px;
+}
+.container {
+    max-width: 1822px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.main {
+    display: flex;
+    align-items: center;
+    gap: 87px;
+}
+h1 {
+    font-weight: 500;
+    font-size: 165px;
+    line-height: 1.2;
+    margin: 0;
+}
+.box {
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    padding: 80px 46px;
+}
+h2 {
+    font-weight: 500;
+    font-size: 94px;
+    line-height: 1;
+    margin-top: 0;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.column {
+    background-color: #D4EAFF;
+    border-radius: 40px;
+    padding: 10px 10px 37px 10px;
+}
+.thumb {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 224px;
+    border-radius: 30px;
+}
+.thumb img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+.column p {
+    font-size: 34px;
+    line-height: .9;
+    padding-left: 20px;
+}
+.column ul {
+    font-size: 17px;
+    line-height: 1;
+    list-style-type: none;
+    padding-left: 20px;
+    margin: 0;
+}
+.column li {
+    margin-bottom: 10px;
+}
+.column li::before {
+    content: '-';
+    margin-right: 8px;
+
+}
