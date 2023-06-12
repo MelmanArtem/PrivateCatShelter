@@ -18,6 +18,9 @@ body {
     align-items: center;
     gap: 87px;
 }
+.main img {
+    width: 100%;
+}
 h1 {
     font-weight: 500;
     font-size: 165px;
@@ -79,5 +82,92 @@ h2 {
 .column li::before {
     content: '-';
     margin-right: 8px;
+}
 
+/*Адаптация под мобильные устройства*/
+
+@media (max-width:768px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    h1 {
+        font-size: 58px;
+        line-height: 1;
+        margin-bottom: 15px;
+    }
+    .box {
+        padding: 30px 26px;
+    }
+    h2 {
+        text-align: center;
+        font-size: 70px;
+        line-height: 0.5;
+        margin-bottom: 45px;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .column {
+        padding: 10px;
+    }
+    .thumb {
+        height: 168px;
+        border-radius: 32px;
+    }
+    .column p {
+        font-size: 30px;
+        line-height: .6;
+    }
+    .column ul {
+        font-size: 16px;
+    }
+    .column li {
+        margin-bottom: 9px;
+    }
+    .column li::before {
+        margin-right: 6px;
+    }
+}
+
+
+@media (max-width:360px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .box {
+        padding: 15px;
+    }
+    h2 {
+        text-align: center;
+        font-size: 50px;
+        line-height: 1;
+        margin-bottom: 28px;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+    .thumb {
+        height: 130px;
+        border-radius: 30px;
+    }
+    .column p {
+        font-size: 25px;
+        line-height: .6;
+    }
+    .column li {
+        margin-bottom: 10px;
+    }
 }
